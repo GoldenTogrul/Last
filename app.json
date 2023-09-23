@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "App",
+    "slug": "App",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "config": {
+        "googleMapsApiKey": "AIzaSyDgEej0QWVU6UNP4FORNhTM2xp896D3aM4"
+      },
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need your location for...",
+        "NSCameraUsageDescription": "We need access to your camera for...",
+        "NSPhotoLibraryUsageDescription": "We need access to your photo library for...",
+        "NSCalendarsUsageDescription": "We need access to your calendar for...",
+      "NSRemindersUsageDescription": "We need access to your reminders for..."
+    
+      },
+      "supportsTablet": true
+    },
+    "android": {
+      
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDgEej0QWVU6UNP4FORNhTM2xp896D3aM4"
+        }
+        
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+       "READ_CALENDAR",
+       "WRITE_CALENDAR"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+type Advertisement @model @auth(rules: [{allow: private}]) {
+  id: ID!
+  title: String!
+  description: String!
+  price: Float!
+  latitude: Float!
+  longitude: Float!
+  executionTime: AWSDateTime!
+  cognitoSub: String!
+  userID: ID! @index(name: "byUser")
+  status: String!
+  acceptedUserID: String
+  comletedUserID: String
+}
+
+type User @model @auth(rules: [{allow: private}]) {
+  id: ID!
+  username: String!
+  email: String!
+  firstName: String!
+  lastName: String
+  profileImage: String
+  cognitoSub: String!
+  phone: String
+  Advertisements: [Advertisement] @hasMany(indexName: "byUser", fields: ["id"])
+  balans: Float!
+}
+ 
