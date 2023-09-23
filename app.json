@@ -16,7 +16,7 @@
     ],
     "ios": {
       "config": {
-        "googleMapsApiKey": "AIzaSyDgEej0QWVU6UNP4FORNhTM2xp896D3aM4"
+        
       },
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "We need your location for...",
@@ -35,9 +35,7 @@
         "backgroundColor": "#ffffff"
       },
       "config": {
-        "googleMaps": {
-          "apiKey": "AIzaSyDgEej0QWVU6UNP4FORNhTM2xp896D3aM4"
-        }
+        
         
       },
       "permissions": [
